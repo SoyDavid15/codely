@@ -1,0 +1,587 @@
+app {
+  background-color: #000;
+  margin: 0 20px;
+  padding: 0;
+}
+
+.bebas-neue-regular {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.Nav {
+  color: #ffffff;
+  padding: 0 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #362F4F;
+  box-shadow: 0 10px 1px #E4FF30;
+  font-family: Bebas Neue;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  height: 80px;
+}
+
+.Nav ul {
+  display: flex;
+  font-family: Bebas Neue;
+  font-size: 22px;
+  /* Tamaño de fuente más grande para links de navbar en desktop */
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+  gap: 20px;
+}
+
+.Hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 6px;
+}
+
+.Hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: #ffffff;
+  transition: all 0.3s ease;
+}
+
+
+.Card1 {
+  font-family: Bebas Neue;
+  margin: 0 3%;
+  padding: 0;
+  border-radius: 30px;
+  width: 40%;
+  height: 50vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5B23FF;
+  border: none;
+  border-right: 8px solid #E4FF30;
+  border-bottom: 8px solid #E4FF30;
+}
+
+.Main1 {
+  font-family: Bebas Neue;
+  font-size: 25px;
+  margin: 120px 2% 0 2%;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.IniciarButton {
+  font-family: Bebas Neue;
+  font-size: 25px;
+  margin: 0 2%;
+  padding: 0;
+  border-radius: 10px;
+  border: none;
+  border-right: 4px solid #5B23FF;
+  border-bottom: 4px solid #5B23FF;
+  width: 20%;
+  height: 7vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #E4FF30;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.IniciarButton:active {
+  transform: scale(0.95);
+}
+
+.Planes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10%;
+}
+
+.Seccion {
+  background-color: #362F4F;
+  padding: 1%;
+  margin: 10% 0;
+  margin-bottom: 5%;
+  color: #ffffff;
+  font-family: Bebas Neue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.SitioWebSistema,
+.SistemaAMedida {
+  width: 40%;
+  height: 60vh;
+  background-color: #362F4F;
+  border-radius: 20px;
+  border-right: 8px solid #E4FF30;
+  border-bottom: 8px solid #E4FF30;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
+  position: relative;
+}
+
+.SitioWebSistema:hover,
+.SistemaAMedida:hover {
+  transform: translateY(-5px);
+}
+
+.HoverText {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(54, 47, 79, 0.9);
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.HoverText h4 {
+  font-size: 35px;
+  margin: 0 0 10px 0;
+  color: #E4FF30;
+  letter-spacing: 1px;
+}
+
+.HoverText p {
+  font-size: 22px;
+  margin: 5px 0;
+}
+
+.HoverText ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 10px 0;
+}
+
+.HoverText ul li {
+  font-size: 20px;
+  margin: 5px 0;
+}
+
+.HoverText .Precio {
+  font-size: 28px;
+  color: #E4FF30;
+  margin-top: 15px;
+  letter-spacing: 1px;
+}
+
+.SitioWebSistema:hover .HoverText,
+.SistemaAMedida:hover .HoverText {
+  opacity: 1;
+}
+
+.SitioWebSistema img,
+.SistemaAMedida img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.SistemaAMedida img {
+  object-position: center top;
+}
+
+.Soluciones {
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+}
+
+.CarruselSoluciones {
+  display: flex;
+  gap: 30px;
+  overflow-x: auto;
+  padding: 10px 5% 40px 5%;
+  /* Espacio para el scrolling y la sombra/borde */
+  scrollbar-width: thin;
+  scrollbar-color: #E4FF30 transparent;
+}
+
+.CarruselSoluciones::-webkit-scrollbar {
+  height: 10px;
+}
+
+.CarruselSoluciones::-webkit-scrollbar-thumb {
+  background-color: #E4FF30;
+  border-radius: 5px;
+}
+
+.TarjetaSolucion {
+  flex: 0 0 320px;
+  /* Ancho fijo de las tarjetas */
+  height: 380px;
+  background-color: #362F4F;
+  border-radius: 20px;
+  border-right: 8px solid #E4FF30;
+  border-bottom: 8px solid #E4FF30;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.TarjetaSolucion .ImagenCaja {
+  width: 100%;
+  height: 250px;
+  background-color: #D9D9D9;
+  border-radius: 12px;
+}
+
+.TarjetaSolucion p {
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 30px;
+  margin-top: auto;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.ProcesoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: 150px;
+  gap: 30px;
+  width: 90%;
+  max-width: 1000px;
+  margin: 60px auto 80px auto;
+}
+
+.ProcesoCard {
+  background-color: #362F4F;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 30px;
+  box-sizing: border-box;
+  border-right: 8px solid #E4FF30;
+  border-bottom: 8px solid #E4FF30;
+  transition: transform 0.3s;
+}
+
+.ProcesoCard:hover {
+  transform: translateY(-5px);
+}
+
+.ProcesoCard p {
+  color: #ffffff;
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 28px;
+  text-align: left;
+  margin: 0;
+}
+
+.ProcesoCard .ProcesoTitulo {
+  text-align: center;
+  font-size: 35px;
+  letter-spacing: 1px;
+}
+
+.ProcesoSpan2 {
+  grid-row: span 2;
+}
+
+.Footer {
+  background-color: #362F4F;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.TituloContacto {
+  font-size: 40px;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.EnlaceContacto {
+  font-size: 25px;
+  margin: 0;
+}
+
+.EnlaceContacto a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s ease;
+}
+
+.EnlaceContacto a:hover {
+  color: #E4FF30;
+}
+
+.Redes {
+  font-family: 'Bebas Neue';
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+
+  /* Ocultar barra de navegación en móviles por algo más simple (o ajustar tamaño) */
+  .Nav {
+    padding: 0 20px;
+    height: 60px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .Hamburger {
+    display: flex;
+  }
+
+  .Hamburger.open .line:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+  }
+
+  .Hamburger.open .line:nth-child(2) {
+    opacity: 0;
+  }
+
+  .Hamburger.open .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
+  }
+
+  .Nav h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+
+  .Nav ul {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #362F4F;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+    font-size: 30px;
+    justify-content: center;
+    border-bottom: 8px solid #E4FF30;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out, padding 0.3s ease-in-out;
+  }
+
+  .Nav ul.open {
+    max-height: 400px;
+    padding: 30px 0;
+  }
+
+  /* Main section adjustments */
+  .Main1 {
+    flex-direction: column-reverse;
+    /* Cambiado a reverse para que el Card1 quede arriba */
+    margin-top: 100px;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .Main1>div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .IniciarButton {
+    width: 60%;
+    height: 60px;
+  }
+
+  .Card1 {
+    width: 90%;
+    height: auto;
+    padding: 30px 20px;
+    font-size: 22px;
+  }
+
+  /* Carrusel adjustments */
+  .TarjetaSolucion {
+    flex: 0 0 240px;
+    /* Tarjeta un poco más pequeña en móviles */
+    height: 300px;
+  }
+
+  .TarjetaSolucion .ImagenCaja {
+    height: 180px;
+  }
+
+  .TarjetaSolucion p {
+    font-size: 24px;
+  }
+
+  /* Planes adjustments */
+  .Planes {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .SitioWebSistema,
+  .SistemaAMedida {
+    width: 90%;
+    height: 50vh;
+  }
+
+  .HoverText {
+    padding: 10px;
+  }
+
+  .HoverText h4 {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+
+  .HoverText p {
+    font-size: 14px;
+    margin: 2px 0;
+  }
+
+  .HoverText ul {
+    margin: 5px 0;
+  }
+
+  .HoverText ul li {
+    font-size: 13px;
+    margin: 2px 0;
+  }
+
+  .HoverText .Precio {
+    font-size: 20px;
+    margin-top: 5px;
+  }
+
+  /* Proceso Grid adjustments */
+  .ProcesoGrid {
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    min-height: 150px;
+    display: flex;
+    /* Cambiamos a flexbox para poder usar la propiedad 'order' en móviles */
+    flex-direction: column;
+  }
+
+  /* Reordenando las tarjetas en móviles. El HTML original tiene:
+     1(1), 5(2), 2(3), Titulo(4), 3(5), 4(6), 6(7) */
+  .ProcesoCard:nth-child(4) {
+    order: 0;
+  }
+
+  /* CONOCE NUESTRO PROCESO primero */
+  .ProcesoCard:nth-child(1) {
+    order: 1;
+  }
+
+  /* 1- DIAGNÓSTICO GRATUITO */
+  .ProcesoCard:nth-child(3) {
+    order: 2;
+  }
+
+  /* 2- DISEÑO DE LA SOLUCIÓN */
+  .ProcesoCard:nth-child(5) {
+    order: 3;
+  }
+
+  /* 3- DESARROLLO DEL SISTEMA */
+  .ProcesoCard:nth-child(6) {
+    order: 4;
+  }
+
+  /* 4- IMPLEMENTACIÓN */
+  .ProcesoCard:nth-child(2) {
+    order: 5;
+  }
+
+  /* 5- CAPACITACIÓN */
+  .ProcesoCard:nth-child(7) {
+    order: 6;
+  }
+
+  /* 6- SOPORTES Y MEJORAS CONTINUAS */
+
+  .ProcesoCard.ProcesoSpan2 {
+    grid-row: auto;
+    min-height: 150px;
+  }
+
+  /* Footer adjustments */
+  .Redes {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+}
+
+/* Scroll Animation Classes */
+.pop-in {
+  opacity: 0;
+  transform: scale(0.5);
+  /* Scale down for initial state */
+  transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.pop-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.delay-1 {
+  transition-delay: 100ms;
+}
+
+.delay-2 {
+  transition-delay: 200ms;
+}
+
+.delay-3 {
+  transition-delay: 300ms;
+}
+
+.delay-4 {
+  transition-delay: 400ms;
+}
+
+.delay-5 {
+  transition-delay: 500ms;
+}
+
+.delay-6 {
+  transition-delay: 600ms;
+}
