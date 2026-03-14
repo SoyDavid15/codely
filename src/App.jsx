@@ -67,7 +67,7 @@ function App() {
             <div>
               <p>En Codely Desarrollamos Sistemas Y Sitios Web Que Automatizan Tu Negocio Y Te Ahorran Tiempo</p>
               <p>No Solo Hacemos Paginas Web. Construimos Software Que Trabaja Por Ti</p>
-              <button className='IniciarButton'>Iniciar</button>
+              <button className='IniciarButton'><a href="https://w.app/codely" target="_blank" >Iniciar</a></button>
             </div>
 
             <div className='Card1'>
@@ -123,7 +123,7 @@ function App() {
           <div className='CarruselSoluciones'>
             <div className='TarjetaSolucion pop-in delay-1'>
               <div className='ImagenCaja'></div>
-              <p>EMPRESAS</p>
+              <p>EMPRENDIMIENTOS</p>
             </div>
             <div className='TarjetaSolucion pop-in delay-2'>
               <div className='ImagenCaja'></div>

@@ -4,6 +4,11 @@ app {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: #000000;
+}
+
 .bebas-neue-regular {
   font-family: "Bebas Neue", sans-serif;
   font-weight: 400;
@@ -67,6 +72,7 @@ app {
   justify-content: center;
   align-items: center;
   background-color: #5B23FF;
+  color: #E4FF30;
   border: none;
   border-right: 8px solid #E4FF30;
   border-bottom: 8px solid #E4FF30;
@@ -98,6 +104,7 @@ app {
   align-items: center;
   background-color: #E4FF30;
   cursor: pointer;
+  color: black;
   transition: transform 0.2s ease-in-out;
 }
 
